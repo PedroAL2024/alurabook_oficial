@@ -1,0 +1,144 @@
+.cabeçalho_menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container_titulo,
+    .container_titulo--negrito {
+        font-family: var(--fonte-secundario);
+        font-size: 30px;
+    }
+    
+    .container_titulo {
+        font-weight: 400;
+    }
+    
+    .container_titulo--negrito {
+        font-weight: 700;
+    }
+    
+}
+
+
+
+
+.container_titulo {
+    font-weight: 400;
+    display: block;
+}
+
+
+
+.opções {
+    display: flex;
+}
+
+.opções_item {
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+
+.opções__link {
+    text-decoration: none
+}
+
+
+.opções__link {
+    text-decoration: none
+    color var(--preto)
+}
+
+
+.opções {
+    display: none
+}
+
+
+.cabeçalho_menu-hamburguer {
+    display: none;
+}
+
+
+
+
+.opções_botão:checked~.lista-menu {
+    display: block;
+    width: auto;
+}
+
+
+
+.opções__botão {
+    display: none;
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+}
+
+.cabecalho {
+    padding: 0 2em;
+}
+
+.opcoes {
+    margin-right: auto;
+}
+
+.container__texto {
+    display: block;
+}
+
+.container_botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img//Menu Aberto.svg");
+  }
+  
+  .container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+  }
+
+  .opções__botão:checked~.opções__rotulo>.opções__item {
+    background: var(--azul-degrade);
+    color: var(--branco);
+}
+
+.opções__item {
+    padding: 2em 1em;
+}
+
+.lista-menu__item:hover {
+    background: var(--azul-degrade);
+}
+
+.lista-menu__item:hover>.lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+}
